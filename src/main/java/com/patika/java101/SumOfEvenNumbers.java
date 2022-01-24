@@ -17,6 +17,7 @@ public class SumOfEvenNumbers {
                 count++;
                 sum += i;
         }
+        input.close();
     }
     System.out.print("Average of the numbers from 1 to "+k+" divisible by 3 and 4  : "+sum/count);
     }
