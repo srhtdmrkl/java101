@@ -13,6 +13,8 @@ public class EventSuggestor
         Scanner input = new Scanner(System.in);
         System.out.print("Temperature: ");
         double temperature = input.nextDouble();
+        input.close();
+        
         if (temperature<5) {
             System.out.println("Skiing");
         } else if (temperature>=5 && temperature<15) {

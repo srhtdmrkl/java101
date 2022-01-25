@@ -7,6 +7,7 @@ public class ChineseZodiac {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter your birth year: ");
         int birthyear = input.nextInt();
+        input.close();
 
         int zodiac = birthyear %12;
 

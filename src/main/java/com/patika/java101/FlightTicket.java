@@ -15,6 +15,8 @@ public class FlightTicket {
         System.out.print("Age of Passenger: ");
         int passengerAge=input.nextInt();
 
+        input.close();
+
         //Applies age discount
         double ticketPriceWithAgeDiscount;
         if (passengerAge<12) {

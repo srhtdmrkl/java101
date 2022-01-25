@@ -2,8 +2,6 @@ package com.patika.java101;
 
 import java.util.Scanner;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.CharacterAction;
-
 /**
  * Determines the zodiac sign from month and day.
  * 
