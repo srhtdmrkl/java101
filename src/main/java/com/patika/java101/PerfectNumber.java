@@ -7,7 +7,8 @@ public class PerfectNumber {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = input.nextInt();
-
+        input.close();
+        
         int i, sum=0;
         //Sums the positive divisors, excluding the number itself
         for (i=1; i<n; i++) {

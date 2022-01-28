@@ -5,20 +5,21 @@ import java.util.Scanner;
 public class PalindromeNumber {
     
 
-    static boolean isPalindrome(int number) {
-        int temp = number, reverseNumber = 0, lastNumber;
-        while (temp != 0) {
-            lastNumber = temp % 10;
-            reverseNumber = (reverseNumber * 10) + lastNumber;
-            temp /= 10;
+    static void isPalindrome(int number) {
+        int tempNumber = number, reversedNumber = 0, lastDigit;
+        while (tempNumber != 0) {
+            lastDigit = tempNumber % 10;
+            reversedNumber = (reversedNumber * 10) + lastDigit;
+            tempNumber /= 10;
         }
-        if (number==reverseNumber) {
-            return true;
-        } else
-            return false;
-        
+        if (number==reversedNumber) {
+            System.out.print(number+" is a palindrome number");
+        } else {
+            System.out.print(number+" is not a palindrome number");
+        }
     }
-    
+
+
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
@@ -26,7 +27,6 @@ public class PalindromeNumber {
         int number = input.nextInt();
         input.close();
 
-        System.out.println(isPalindrome(number));
-    }
-        
+        isPalindrome(number);
+    }  
 }
