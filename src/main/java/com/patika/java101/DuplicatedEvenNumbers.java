@@ -1,6 +1,6 @@
 package com.patika.java101;
 
-public class DuplicatedOddNumbers {
+public class DuplicatedEvenNumbers {
 
     static boolean isFound(int[] arr, int value) {
         for (int i : arr) {
